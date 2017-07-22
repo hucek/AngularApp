@@ -1,0 +1,14 @@
+<h3> ~ Newly Elected Members ~ </h3>
+<div class="col-1-8">
+<lawmaker-search></lawmaker-search>
+</div>
+<div class="grid grid-pad">
+  <a *ngFor="let lawmaker of lawmakers" [routerLink]="['/detail', lawmaker.id]" class="col-1-4">
+    <div class="module lawmaker">
+      <img src="img/{{lawmaker.name}}.jpg" width="50%">
+      <h4>{{lawmaker.name}} </h4>
+       <p class="description">{{lawmaker.description}} </p>
+      <img src="img/{{lawmaker.party}}.jpg" width="15%">
+    </div>
+  </a>
+</div>

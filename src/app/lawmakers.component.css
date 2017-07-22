@@ -1,0 +1,151 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+/*.lawmakers {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}*/
+
+.addform{
+  padding: 50px;
+  background: #fff;
+  margin-top: 10px;
+
+}
+.addform input{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 10px;
+
+}
+
+
+.lawmakers li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.lawmakers li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.lawmakers li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.lawmakers .text {
+  position: relative;
+  top: -3px;
+}
+.lawmakers .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button.delete {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: gray !important;
+  color:white;
+}
+
+.grid {
+  margin: 0;
+}
+.col-1-4 {
+  width: 25%;
+}
+.module {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  height: 100%
+  min-width: 120px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+h4 {
+  position: relative;
+  color: #202121;
+}
+.description{
+  position: relative;
+  color: #202121;
+  font-size: 11px;
+
+}
+.module:hover {
+  background-color: #EEE;
+  cursor: pointer;
+  color: #607d8b;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px; }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

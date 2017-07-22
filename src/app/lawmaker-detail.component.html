@@ -1,0 +1,20 @@
+<div *ngIf="lawmaker">
+  <h2>{{lawmaker.name}} details!</h2>
+  <div>
+    <label>id: </label>{{lawmaker.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="lawmaker.name" placeholder="name" />
+  </div>
+  <div>
+    <label>Political Party: </label>
+    <input [(ngModel)]="lawmaker.party" placeholder="party" />
+  </div>
+  <br/>
+   <div>
+    <label>Description: </label>
+    <input width="300" [(ngModel)]="lawmaker.description" placeholder="party" />
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

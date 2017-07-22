@@ -1,0 +1,42 @@
+
+
+
+<div class="addform">
+  <h2>Add New Member</h2>
+  <label>Lawmaker Name:</label> <input #lawmakerName />
+  <label>Political Party:</label> <input #party />
+  <label>Poto:</label> <input #photo />
+  <label>Description:</label> <input #description />
+  <button (click)="add(lawmakerName.value); lawmakerName.value=''">
+    Add
+  </button>
+
+
+ <div *ngIf="selectedLawmaker">
+  <h2>
+    {{selectedLawmaker.name | uppercase}} is selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+</div>
+<br />
+<h2>All Lawmakers</h2>
+<div class="grid grid-pad">
+  <a *ngFor="let lawmaker of lawmakers"
+    [class.selected]="lawmaker === selectedLawmaker"
+    (click)="onSelect(lawmaker)" class="col-1-4">
+    <button class="delete"
+    (click)="delete(lawmaker); $event.stopPropagation()">x</button>
+    <div class="module lawmaker">
+      <img src="img/{{lawmaker.name}}.jpg" width="50%">
+      <h4>{{lawmaker.name}} </h4>
+       <p class="description">{{lawmaker.description}} </p>
+      <img src="img/{{lawmaker.party}}.jpg" width="15%">
+    </div>
+
+   
+    
+  </a>
+</div>
+
+
