@@ -1,7 +1,7 @@
 //This is the component to show the details of the lawmaker
 //Importing Angular Modules
 import 'rxjs/add/operator/switchMap';
-import { Component, Input, OnInit  } from '@angular/core';
+import { Component, Input, OnInit  } from '@angular/core'; 
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location }                 from '@angular/common';
 
